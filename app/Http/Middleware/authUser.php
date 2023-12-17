@@ -5,10 +5,9 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
 use Symfony\Component\HttpFoundation\Response;
 
-class AuthUser
+class authUser
 {
     /**
      * Handle an incoming request.
@@ -18,10 +17,9 @@ class AuthUser
     public function handle(Request $request, Closure $next): Response
     {
         if (Auth::user()->utype === 'u'){
-            return $next($request);
+        return $next($request);
         }else{
-            return redirect()->route('login')->with('message','Please Log In');
+            return redirect()->route('login');
         }
-
     }
 }

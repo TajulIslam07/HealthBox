@@ -46,11 +46,11 @@
                         <span class="hide-menu">UI COMPONENTS</span>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+                        <a class="sidebar-link" href="{{route('allPatient')}}" aria-expanded="false">
                 <span>
                   <i class="ti ti-article"></i>
                 </span>
-                            <span class="hide-menu">Buttons</span>
+                            <span class="hide-menu">All Patient</span>
                         </a>
                     </li>
 
@@ -107,7 +107,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                                 <div class="message-body">
-                                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                    <a href="{{route('home')}}" class="d-flex align-items-center gap-2 dropdown-item">
                                         <i class="ti ti-user fs-6"></i>
                                         <p class="mb-0 fs-3">My Profile</p>
                                     </a>

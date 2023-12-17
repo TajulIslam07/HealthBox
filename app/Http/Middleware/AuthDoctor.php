@@ -19,6 +19,7 @@ class AuthDoctor
         if (Auth::user()->utype === 'd'){
         return $next($request);
         }else{
+            session()->flush();
             return redirect()->route('login');
         }
     }

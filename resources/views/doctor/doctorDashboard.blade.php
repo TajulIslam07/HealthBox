@@ -1,7 +1,10 @@
 @extends('doctor.layout')
 @section('doctorBody')
     <div class="container-fluid">
-        <h2>My Appointment Information</h2>
+        <h2>Today's Schedule</h2>
+        <h2>Room : </h2>
+        &nbsp;
+        <h3>Patient Details : </h3>
         <div class="table-responsive mt-4">
             <table class="table table-striped table-bordered">
                 <thead>
@@ -13,7 +16,7 @@
                     <th>Appointment Time</th>
                     <th>Serial No.</th>
 
-                    <th>Prescription</th>
+                    <th>Details & Prescription</th>
 
                 </tr>
                 </thead>
@@ -26,7 +29,7 @@
                         <td>Admin</td>
                         <td>Admin</td>
                         <td>Admin</td>
-                        <td><a href="#" class="btn bg-primary">Write Prescription</a></td>
+                        <td><a href="{{route('detailsPrescription')}}" class="btn bg-primary">Details & Write Prescription</a></td>
                     </tr>
                     </tbody>
                 @endfor
