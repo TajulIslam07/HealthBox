@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\User;
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Models\Doctor;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -19,16 +21,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home.index');
+        return view('user');
     }
-
 
     public function appointment()
     {
-        return view('user.appointment');
+       $dctr=Doctor::all();
+
+        return view('user.appointment',compact('dctr'));
     }
-    public function myappointment()
-    {
-     return view('user.myAppointment');
-    }
+
 }

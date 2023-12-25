@@ -16,7 +16,7 @@ class authUser
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::user()->utype === 'u'){
+        if (Auth::user()->utype == 'u'){
         return $next($request);
         }else{
             return redirect()->route('login');

@@ -16,9 +16,12 @@ class AuthDoctor
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::user()->utype === 'd'){
+        if (Auth::user()->utype == 'd'){
         return $next($request);
-        }else{
+        }elseif (Auth::user()->utype == 'u'){
+            return redirect()->route('userHome');
+        }
+        else{
             session()->flush();
             return redirect()->route('login');
         }

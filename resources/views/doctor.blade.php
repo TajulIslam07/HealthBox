@@ -1,8 +1,8 @@
 @extends('layouts.base')
 @section('body')
     <!-- Slider Area -->
-    <div class="container m-5">
-        <section class="slider container d-flex justify-content-center">
+
+        {{--<section class="slider container d-flex justify-content-center">
             <div id="carouselExampleIndicators" class=" carousel slide" data-ride="carousel" style="width: 18rem">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -29,8 +29,20 @@
                 </a>
             </div>
             <!--/ End Slider Area -->
-        </section>
-    </div>
+        </section>--}}
+<div class="container">
+    <div class="card-deck m-3">
+        @foreach($dctr as $data)
+        <div class="card">
+            <img class="card-img-top" src="doctor/images/profile/{{$data->image}}" style="height: 18rem" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{$data->name}}</h5>
+                <p class="card-text">{{$data->speciality}}</p>
+            </div>
+        </div>
+        @endforeach
 
+    </div>
+</div>
 
 @endsection

@@ -17,21 +17,26 @@
                     <th>Status</th>
                 </tr>
                 </thead>
-               @for($i=1;$i<=5;$i++)
+                @if(!$appointment)
+                @else
+                    @foreach($appointment as $data)
+                @for($i=1;$i<=count($appointment);$i++)
                 <tbody>
                 <tr>
                     <td>{{$i}}</td>
-                    <td>John Doe</td>
-                    <td>john</td>
-                    <td>Admin</td>
-                    <td>Admin</td>
-                    <td>Admin</td>
-                    <td>Admin</td>
-                    <td>Admin</td>
-                    <td>Admin</td>
+                    <td>{{$data->name}}</td>
+                    <td>{{$data->name}}</td>
+                    <td>{{$data->name}}</td>
+                    <td>{{$data->name}}</td>
+                    <td>{{$data->name}}</td>
+                    <td>{{$data->name}}</td>
+                    <td>{{$data->name}}</td>
+                    <td>{{$data->name}}</td>
                 </tr>
                 </tbody>
                 @endfor
+                    @endforeach
+                @endif
             </table>
         </div>
     </div>

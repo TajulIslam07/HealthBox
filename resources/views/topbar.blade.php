@@ -62,17 +62,32 @@
                                     </ul>
                                     @endif
                                 </li>
-                               {{-- <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
-                                    <ul class="dropdown">
-                                        <li><a href="404.html">404 Error</a></li>
-                                    </ul>
-                                </li>--}}
+
                                 <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
                                     <ul class="dropdown">
                                         <li><a href="blog-single.html">Blog Details</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="contact.html">Contact Us</a></li>
+                                @if(Auth::id())
+                                <li><a href="#">Profile <i class="icofont-rounded-down"></i></a>
+                                    <ul class="dropdown">
+                                        <li><a href="404.html">Edit Profile</a></li>
+                                        <li>
+                                            <div class="get-quote">
+                                                <a class="btn" href="{{ route('logout') }}"
+                                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                                    {{ __('Logout') }}
+                                                </a>
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                    @csrf
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                @endif
                             </ul>
                         </nav>
                     </div>
@@ -89,19 +104,7 @@
                             <a href="{{'register'}}" class="btn">Register</a>
                         </div>
                     </div>
-                @else
-                <div class="col-lg-2 col-12">
-                    <div class="get-quote">
-                        <a class="btn" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                            @csrf
-                        </form>
-                    </div>
-                </div>
+
                 @endif
             </div>
         </div>

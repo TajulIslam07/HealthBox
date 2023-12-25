@@ -14,7 +14,10 @@
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12 col-12">
-                <form class="form text-black" action="#">
+                @foreach($dctr as $data)
+                <form class="form text-black" action="{{route('appointment-data')}}" method="post">
+                    @csrf
+
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="form-group">
@@ -34,12 +37,9 @@
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="form-group">
                                 <div tabindex="0">
-                                    <select class="form-select nice-select form-control wide ">
-                                        <option data-value="1">Department</option>
-                                        <option data-value="2">Cardiac Clinic</option>
-                                        <option data-value="3">Neurology</option>
-                                        <option data-value="4">Dentistry</option>
-                                        <option data-value="5">Gastroenterology</option>
+                                    <select class="form-select nice-select form-control wide " name="speciality">
+                                        <option >{{$data->speciality}}</option>
+
                                     </select>
                                 </div>
                             </div>
@@ -47,18 +47,16 @@
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="form-group">
                                 <div tabindex="0">
-                                    <select class="list nice-select form-control wide">
-                                        <option>Doctor</option>
-                                        <option>Dr. Akther Hossain</option>
-                                        <option>Dr. Dery Alex</option>
-                                        <option>Dr. Jovis Karon</option>
+                                    <select class="list nice-select form-control wide" name="doctor">
+                                        <option>{{$data->name}}</option>
+
                                     </select>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="form-group">
-                                <input type="date" placeholder="Date" id="datepicker">
+                                <input type="date" placeholder="Date" id="datepicker" name="date">
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-12">
@@ -78,6 +76,7 @@
 
                     </div>
                 </form>
+                    @endforeach
             </div>
             <div class="col-lg-6 col-md-12 ">
                 <div class="appointment-image">
