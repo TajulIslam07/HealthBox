@@ -40,7 +40,7 @@
                                 <div tabindex="0">
                                     <select class="list nice-select form-control wide" name="doctor">
                                         @foreach($dctr as $data)
-                                        <option value="{{$data->id}}">{{$data->name}}---{{$data->speciality}}</option>
+                                        <option value="{{$data->id}}">{{$data->name1}}---{{$data->speciality}}</option>
 
                                     @endforeach
                                     </select>
