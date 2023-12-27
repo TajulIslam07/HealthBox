@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Models\Appointment;
 
 class DoctorController extends Controller
 {
@@ -27,15 +28,14 @@ class DoctorController extends Controller
     }
     public function dashboard()
     {
-        return view('doctor.doctorDashboard');
+        $patient=Appointment::where('doctor_id',Auth::id())->get();
+        return view('doctor.doctorDashboard',compact('patient'));
     }
-    public function detailsPrescription()
-    {
-        return view('doctor.detailsPrescription');
-    }
+
     public function allPatient()
     {
-        return view('doctor.allPatient');
+        $patient=Appointment::where('doctor_id',Auth::id())->get();
+        return view('doctor.allPatient',compact('patient'));
     }
     public function allDoctors()
     {
@@ -73,6 +73,9 @@ class DoctorController extends Controller
            $dctr1->save();
            return redirect()->back();
 
+    }
+    public function details($id){
+        return view('doctor.detailsPrescription');
     }
 
 }

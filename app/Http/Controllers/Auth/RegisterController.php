@@ -79,10 +79,6 @@ class RegisterController extends Controller
             Doctor::create([
                 'user_id' => $user->id,
             ]);
-        }elseif($user->utype === 'u'){
-            Patient::create([
-                'user_id'=>$user->id,
-            ]);
         }
 
         return $user;

@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Appointment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Nette\Schema\Schema;
 
 class AppointmentController extends Controller
 {
@@ -14,8 +16,11 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-        $appointment=Appointment::where('user_id',Auth::id())->get();
-
+        $appointment=DB::table('doctors')
+            ->join('appointments','appointments.doctor_id','=','doctors.id')
+            ->where('appointments.user_id',Auth::id())
+            ->get();
+        //dd($appointment);
         return view('user.myAppointment',compact('appointment'));
     }
 
@@ -32,14 +37,13 @@ class AppointmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
         $appointment=new Appointment();
         $appointment->user_id=Auth::id();
         $appointment->name=$request->name;
         $appointment->email=$request->email;
         $appointment->phone=$request->phone;
-        $appointment->speciality=$request->speciality;
-        $appointment->doctor=$request->doctor;
+        $appointment->doctor_id=$request->doctor;
         $appointment->date=$request->date;
         $appointment->message=$request->message;
         $appointment->serial=$request->serial;

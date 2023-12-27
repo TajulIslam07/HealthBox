@@ -36,10 +36,10 @@ Route::get('/my-appointment',[AppointmentController::class,'index'])->name('myap
 Route::middleware(['auth','doctorPage'])->group(function (){
 Route::get('/home', [\App\Http\Controllers\doctor\DoctorController::class, 'index'])->name('home');
 Route::get('/doctor-dashboard', [\App\Http\Controllers\doctor\DoctorController::class, 'dashboard'])->name('doctorDashboard');
-Route::get('/details-prescription', [\App\Http\Controllers\doctor\DoctorController::class, 'detailsPrescription'])->name('detailsPrescription');
 Route::get('/all-patient', [\App\Http\Controllers\doctor\DoctorController::class, 'allPatient'])->name('allPatient');
 Route::get('/all-doctors', [\App\Http\Controllers\doctor\DoctorController::class, 'allDoctors'])->name('allDoctors');
 Route::get('/edit-doctors', [\App\Http\Controllers\doctor\DoctorController::class, 'editDoctors'])->name('editDoctors');
 Route::post('/edit-doctors', [\App\Http\Controllers\doctor\DoctorController::class, 'editDoctorsUpload'])->name('editDoctorsUpload');
+Route::get('/report-details/{id}',[\App\Http\Controllers\doctor\DoctorController::class,'details']);
 });
 

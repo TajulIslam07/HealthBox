@@ -14,7 +14,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12 col-12">
-                @foreach($dctr as $data)
+
                 <form class="form text-black" action="{{route('appointment-data')}}" method="post">
                     @csrf
 
@@ -34,22 +34,15 @@
                                 <input name="phone" type="text" placeholder="Phone">
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <div tabindex="0">
-                                    <select class="form-select nice-select form-control wide " name="speciality">
-                                        <option >{{$data->speciality}}</option>
 
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="form-group">
                                 <div tabindex="0">
                                     <select class="list nice-select form-control wide" name="doctor">
-                                        <option>{{$data->name}}</option>
+                                        @foreach($dctr as $data)
+                                        <option value="{{$data->id}}">{{$data->name}}---{{$data->speciality}}</option>
 
+                                    @endforeach
                                     </select>
                                 </div>
                             </div>
@@ -76,7 +69,7 @@
 
                     </div>
                 </form>
-                    @endforeach
+
             </div>
             <div class="col-lg-6 col-md-12 ">
                 <div class="appointment-image">

@@ -22,7 +22,7 @@
         </div>
         <div class="col-3">
             <div class="text-center">
-                <img src="doctor/assets/images/profile/dctr.jpeg" width="100" class="rounded-circle">
+                <img src={{asset("doctor/assets/images/profile/dctr.jpeg")}} width="100" class="rounded-circle">
             </div>
         </div>
     </div>

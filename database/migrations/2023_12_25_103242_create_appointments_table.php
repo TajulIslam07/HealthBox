@@ -18,13 +18,15 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->integer('phone');
-            $table->string('speciality');
-            $table->string('doctor');
+            //$table->string('speciality');
+            $table->integer('doctor_id');
             $table->date('date');
             $table->string('message')->nullable();
             $table->integer('serial')->nullable();
             $table->integer('room')->nullable();
             $table->string('status')->nullable();
+            $table->string('age')->nullable();
+            $table->string('bloodGroup')->nullable();
             $table->timestamps();
         });
     }
