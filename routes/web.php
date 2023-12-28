@@ -48,7 +48,7 @@ Route::post('/report-upload/{id}',[\App\Http\Controllers\doctor\DoctorController
 Route::group(['middleware'=>['auth','adminPage']],function (){
 });
 Route::get('/admin-dashboard', [AdminController::class,'adminDashboard'])->name('adminDashboard');
-Route::get('/add-appointment' , [AdminController::class,'addAppointment'])->name('addApointment');
+Route::get('/add-appointment' , [AdminController::class,'addAppointment'])->name('addAppointment');
 
 Route::get('/add-blog' , [AdminController::class,'addBlog'])->name('addBlog');
 Route::get('/add-department' , [AdminController::class,'addDepartment'])->name('addDepartment');

@@ -76,13 +76,9 @@
                         <li><a href="invoice-reports.html"> Invoice Report </a></li>
                     </ul>
                 </li>
-<<<<<<< HEAD
-                <li>
-                    <a href="settings.html"><i class="fa fa-cog"></i> <span>Settings</span></a>
-                </li>
 
-=======
->>>>>>> 07ad4728141bf12de90636bba363c9230545a1af
+
+
             </ul>
         </div>
     </div>
