@@ -25,4 +25,5 @@ class IndexController extends Controller
         }
         return redirect()->back();
     }
+
 }

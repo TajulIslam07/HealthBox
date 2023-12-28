@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Nette\Schema\Schema;
+use App\Models\Serial;
 
 class AppointmentController extends Controller
 {
@@ -17,7 +18,8 @@ class AppointmentController extends Controller
     public function index()
     {
         $appointment=DB::table('doctors')
-            ->join('appointments','appointments.doctor_id','=','doctors.id')
+            ->join('serials','serials.doctor_id','=','doctors.id')
+            ->join('appointments','appointments.id','=','serials.appointment_id')
             ->where('appointments.user_id',Auth::id())
             ->get();
         //dd($appointment);
@@ -40,16 +42,28 @@ class AppointmentController extends Controller
 
         $appointment=new Appointment();
         $appointment->user_id=Auth::id();
-        $appointment->name=$request->name;
+        $appointment->p_name=$request->name;
         $appointment->email=$request->email;
         $appointment->phone=$request->phone;
         $appointment->doctor_id=$request->doctor;
         $appointment->date=$request->date;
         $appointment->message=$request->message;
-        $appointment->serial=$request->serial;
-        $appointment->room=$request->room;
-        $appointment->status=$request->status;
+       // $appointment->serial=$request->serial;
+        //$appointment->room=$request->room;
+        $appointment->age=$request->age;
+        $appointment->bloodGroup=$request->bloodGroup;
+
         $appointment->save();
+        $serial=new Serial();
+        $serial->appointment_id=$appointment->id;
+        $serial->doctor_id=$appointment->doctor_id;
+        $test=DB::table('appointments')->where('doctor_id',$request->doctor)->get();
+        //dd(count($test));
+        $serial->serial_id=count($test);
+        $serial->status='In Progress';
+        $serial->save();
+
+        //$appointment->status='In Progress';
         return redirect()->back();
     }
 

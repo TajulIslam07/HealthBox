@@ -5,251 +5,156 @@
     <div class="page-wrapper">
         <div class="content">
             <div class="row">
-                <div class="col-sm-4 col-3">
-                    <h4 class="page-title">Doctors</h4>
-                </div>
-                <div class="col-sm-8 col-9 text-right m-b-20">
-                    <a href="add-doctor.html" class="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Doctor</a>
-                </div>
-            </div>
-            <div class="row doctor-grid">
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="profile.html"><img alt="" src="img/doctor-thumb-03.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Cristina Groves</a></h4>
-                        <div class="doc-prof">Gynecologist</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="profile.html"><img alt="" src="img/doctor-thumb-07.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Marie Wells</a></h4>
-                        <div class="doc-prof">Psychiatrist</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="profile.html"><img alt="" src="img/doctor-thumb-04.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Henry Daniels</a></h4>
-                        <div class="doc-prof">Cardiologist</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="profile.html"><img alt="" src="img/doctor-thumb-11.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Mark Hunter</a></h4>
-                        <div class="doc-prof">Urologist</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="#"><img alt="" src="img/doctor-thumb-12.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Michael Sullivan</a></h4>
-                        <div class="doc-prof">Ophthalmologist</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="profile.html"><img alt="" src="img/doctor-thumb-02.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Linda Barrett</a></h4>
-                        <div class="doc-prof">Dentist</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="profile.html"><img alt="" src="img/doctor-thumb-09.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Ronald Jacobs</a></h4>
-                        <div class="doc-prof">Oncologist</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="profile.html"><img alt="" src="img/doctor-thumb-01.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Albert Sandoval</a></h4>
-                        <div class="doc-prof">Neurologist</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="profile.html"><img alt="" src="img/doctor-thumb-05.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Diana Bailey</a></h4>
-                        <div class="doc-prof">General Surgery</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="profile.html"><img alt="" src="img/doctor-thumb-10.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Shirley Willis</a></h4>
-                        <div class="doc-prof">Radiologist</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="profile.html"><img alt="" src="img/doctor-thumb-08.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Pamela Curtis</a></h4>
-                        <div class="doc-prof">Pediatrics</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4  col-lg-3">
-                    <div class="profile-widget">
-                        <div class="doctor-img">
-                            <a class="avatar" href="profile.html"><img alt="" src="img/doctor-thumb-06.jpg"></a>
-                        </div>
-                        <div class="dropdown profile-action">
-                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                            </div>
-                        </div>
-                        <h4 class="doctor-name text-ellipsis"><a href="profile.html">Justin Parker</a></h4>
-                        <div class="doc-prof">Physical Therapist</div>
-                        <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States, San Francisco
-                        </div>
-                    </div>
+                <div class="col-lg-8 offset-lg-2">
+                    <h4 class="page-title">Add Doctors</h4>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="see-all">
-                        <a class="see-all-btn bg-primary text-white" href="javascript:void(0);">Load More</a>
-                    </div>
+                <div class="col-lg-8 offset-lg-2">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>First Name <span class="text-danger">*</span></label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Username <span class="text-danger">*</span></label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Email <span class="text-danger">*</span></label>
+                                    <input class="form-control" type="email">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input class="form-control" type="password">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Confirm Password</label>
+                                    <input class="form-control" type="password">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Date of Birth</label>
+                                    <div class="cal-icon">
+                                        <input type="text" class="form-control datetimepicker">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group gender-select">
+                                    <label class="gen-label">Gender:</label>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" name="gender" class="form-check-input">Male
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" name="gender" class="form-check-input">Female
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label>Address</label>
+                                            <input type="text" class="form-control ">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label>Country</label>
+                                            <select class="form-control select">
+                                                <option>Bangladesh</option>
+                                                <option>India</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label>City</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label>State/Province</label>
+                                            <select class="form-control select">
+                                                <option>Dhaka</option>
+                                                <option>Dilhi</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label>Postal Code</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Phone </label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Avatar</label>
+                                    <div class="profile-upload">
+                                        <div class="upload-img">
+                                            <img alt="" src="img/user.jpg">
+                                        </div>
+                                        <div class="upload-input">
+                                            <input type="file" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="display-block">Status</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="status" id="patient_active" value="option1" checked>
+                                <label class="form-check-label" for="patient_active">
+                                    Active
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="status" id="patient_inactive" value="option2">
+                                <label class="form-check-label" for="patient_inactive">
+                                    Inactive
+                                </label>
+                            </div>
+                        </div>
+                        <div class="m-t-20 text-center">
+                            <button class="btn btn-primary submit-btn">Create Doctors</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    
 @endsection

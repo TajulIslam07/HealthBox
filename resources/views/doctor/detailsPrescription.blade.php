@@ -3,21 +3,22 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3">
+            @foreach($patient as $data)
             <aside>
-              <h5>Name :</h5>
+              <h5>Name : {{$data->p_name}}</h5>
                 &nbsp;
-                <h5>phone</h5>
+                <h5>phone : {{$data->phone}}</h5>
             </aside>
         </div>
         <div class="col-sm-3">
             <aside>
-                <h5>Blood Group :</h5> &nbsp;
-                <h5>Email</h5>
+                <h5>Blood Group : {{$data->bloodGroup}}</h5> &nbsp;
+                <h5>Email : {{$data->email}}</h5>
             </aside>
         </div>
         <div class="col-sm-3">
             <aside>
-                <h5>Age :</h5> &nbsp;
+                <h5>Age : {{$data->age}}</h5> &nbsp;
             </aside>
         </div>
         <div class="col-3">
@@ -27,22 +28,24 @@
         </div>
     </div>
     <div class="h1">Medicine & Plan</div>
-    <form action="#">
+    <form action="{{route('prescriptionUpload',['id'=>$data->id])}}" method="post">
+        @endforeach
+        @csrf
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control bg-white" id="exampleFormControlTextarea1" rows="10" placeholder="Write Medicine"></textarea>
+            <textarea class="form-control bg-white" id="exampleFormControlTextarea1" rows="10" placeholder="Write Medicine" name="medicine"></textarea>
         </div>
         <div class="row">
             <div class="col-sm">
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control bg-white" id="exampleFormControlTextarea1" rows="10" placeholder="About Patient"></textarea>
+                    <textarea class="form-control bg-white" id="exampleFormControlTextarea1" rows="10" placeholder="About Patient" name="aboutPatient"></textarea>
                 </div>
             </div>
             <div class="col-sm">
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control bg-white" id="exampleFormControlTextarea1" rows=5 placeholder="Report"></textarea>
+                    <textarea class="form-control bg-white" id="exampleFormControlTextarea1" rows=5 placeholder="Report" name="report"></textarea>
                 </div>
             </div>
         </div>
@@ -58,5 +61,7 @@
             Prescribe
         </button>
     </form>
+
 </div>
+
 @endsection

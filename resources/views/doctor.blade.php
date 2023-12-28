@@ -31,7 +31,7 @@
             <!--/ End Slider Area -->
         </section>--}}
 <div class="container">
-    <div class="card-deck m-3">
+   {{--<div class="card-deck m-3">
         @foreach($dctr as $data)
         <div class="card">
             <img class="card-img-top" src="doctor/images/profile/{{$data->image}}" style="height: 18rem" alt="Card image cap">
@@ -42,6 +42,25 @@
         </div>
         @endforeach
 
+    </div>--}}
+
+    <div class="row doctor-grid">
+        <div class="col-md-4 col-sm-4  col-lg-3">
+            @foreach($dctr as $data)
+                <div class="profile-widget">
+                    <div class="doctor-img">
+                        <a class="avatar" href="profile.html"><img alt="" src={{asset('doctor/images/profile/'.$data->image)}} ></a>
+                    </div>
+
+                    <h4 class="doctor-name text-ellipsis"><a href="profile.html">{{$data->d_name}}</a></h4>
+                    <div class="doc-prof">{{$data->speciality}}</div>
+                    <div class="user-country">
+                        <i class="fa fa-map-marker"></i> {{$data->medical_degree}}
+                    </div>
+                </div>
+            @endforeach
+
+        </div>
     </div>
 </div>
 

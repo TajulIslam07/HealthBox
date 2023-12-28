@@ -11,50 +11,52 @@
     <link rel="stylesheet" type="text/css" href={{asset('admin/css/select2.min.css')}}>
     <link rel="stylesheet" type="text/css" href={{asset('admin/css/style.css')}}>
 </head>
-
 <body>
 <div class="sidebar" id="sidebar">
     <div class="sidebar-inner slimscroll">
         <div id="sidebar-menu" class="sidebar-menu">
             <ul>
                 <li class="menu-title">Main</li>
+                <li class="bg-primary">
+
+                    <a class="btn" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+
+                        <i class="fa-solid fa-right-from-bracket"></i> <span>Logout</span>
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+
+                </li>
+
                 <li>
                     <a href="{{route('adminDashboard')}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
                 </li>
                 <li>
-                    <a href="doctors.html"><i class="fa fa-user-md"></i> <span>Doctors</span></a>
+                    <a href="{{route('doctors')}}"><i class="fa fa-user-md"></i> <span>Doctors</span></a>
                 </li>
                 <li>
-                    <a href="patients.html"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
+                    <a href="{{route('patients')}}"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
                 </li>
                 <li >
-                    <a href="appointments.html"><i class="fa fa-calendar"></i> <span>Appointments</span></a>
+                    <a href="{{route('appointment')}}"><i class="fa fa-calendar"></i> <span>Appointments</span></a>
                 </li>
                 <li>
-                    <a href="schedule.html"><i class="fa-regular fa-calendar"></i><span>Doctor Schedule</span></a>
+                    <a href="{{route('schedule')}}"><i class="fa-regular fa-calendar"></i><span>Doctor Schedule</span></a>
                 </li>
                 <li>
-                    <a href="departments.html"><i class="fa-regular fa-hospital"></i> <span>Departments</span></a>
-                </li>
-
-                <li>
-                    <a href="chat.html"><i class="fa fa-comments"></i> <span>Chat</span> <span class="badge badge-pill bg-primary float-right">5</span></a>
-                </li>
-                <li class="submenu">
-                    <a href="#"><i class="fa fa-video-camera camera"></i> <span> Calls</span> <span class="menu-arrow"></span></a>
-                    <ul style="display: none;">
-                        <li><a href="voice-call.html">Voice Call</a></li>
-                        <li><a href="incoming-call.html">Incoming Call</a></li>
-                    </ul>
+                    <a href="{{route('departments')}}"><i class="fa-regular fa-hospital"></i> <span>Departments</span></a>
                 </li>
 
                 <li class="submenu">
                     <a href="#"><i class="fa fa-commenting-o"></i> <span> Blog</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-details.html">Blog View</a></li>
-                        <li><a href="add-blog.html">Add Blog</a></li>
-                        <li><a href="edit-blog.html">Edit Blog</a></li>
+                        <li><a href="{{route('blog')}}">Blog</a></li>
+                        <li><a href="{{route('blogDetails')}}">Blog View</a></li>
+                        <li><a href="{{route('addBlog')}}">Add Blog</a></li>
+                        <li><a href="{{route('editBlog')}}">Edit Blog</a></li>
                     </ul>
                 </li>
                 <li class="submenu">
@@ -64,9 +66,9 @@
                         <li><a href="invoice-reports.html"> Invoice Report </a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="settings.html"><i class="fa fa-cog"></i> <span>Settings</span></a>
-                </li>
+
+
+
             </ul>
         </div>
     </div>
@@ -80,6 +82,10 @@
 <script src={{asset('admin/js/jquery.slimscroll.js')}}></script>
 <script src={{asset("admin/js/select2.min.js")}}></script>
 <script src={{asset("admin/js/moment.min.js")}}></script>
+<script src={{asset('admin/js/jquery.fullcalendar.js')}}></script>
+<script src={{asset('admin/js/jquery.dataTables.min.js')}}></script>
+<script src={{asset("admin/js/fullcalendar.min.js")}}></script>
+<script src={{asset("admin/js/dateTables.bootstrap4.min.js")}}></script>
 <script src={{asset("admin/s/bootstrap-datetimepicker.min.js")}}></script>
 <script src={{asset("admin/js/app.js")}}></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

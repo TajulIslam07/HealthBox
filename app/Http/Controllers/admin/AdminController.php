@@ -3,12 +3,21 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Doctor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
     public function adminDashboard (){
-        return view('admin.adminDashboard');
+        $appointment=DB::table('serials')
+            ->where('serials.status','=','In Progress')
+            ->join('appointments','appointments.id','=','serials.appointment_id')
+            ->join('doctors','doctors.id','=','serials.doctor_id')
+            ->get();
+        $dctr=Doctor::all();
+       // dd($appointment);
+        return view('admin.adminDashboard',['appointment'=>$appointment,'doctor'=>$dctr]);
 
     }
 
@@ -43,7 +52,11 @@ class AdminController extends Controller
     }
 
     public function appointment (){
-        return view('admin.appointment');
+        $appointment=DB::table('serials')
+            ->join('appointments','appointments.id','=','serials.appointment_id')
+            ->join('doctors','doctors.id','=','serials.doctor_id')
+            ->get();
+        return view('admin.appointments',['appointment'=>$appointment]);
 
     }
 
@@ -66,7 +79,8 @@ class AdminController extends Controller
 
     }
     public function doctors (){
-        return view('admin.doctors');
+            $dctr=Doctor::all();
+        return view('admin.doctors',['doctor'=>$dctr]);
 
     }
     public function editBlog (){

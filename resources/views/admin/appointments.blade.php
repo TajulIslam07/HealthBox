@@ -9,7 +9,7 @@
                     <h4 class="page-title">Appointments</h4>
                 </div>
                 <div class="col-sm-8 col-9 text-right m-b-20">
-                    <a href="add-appointment.html" class="btn btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Appointment</a>
+                    <a href="{{route('addAppointment')}}" class="btn btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Appointment</a>
                 </div>
             </div>
             <div class="row">
@@ -30,14 +30,19 @@
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach($appointment as $data)
+
                             <tr>
-                                <td>APT0001</td>
-                                <td><img width="28" height="28" src="img/user.jpg" class="rounded-circle m-r-5" alt=""> Denise Stevens</td>
-                                <td>35</td>
-                                <td>Henry Daniels</td>
-                                <td>Cardiology</td>
-                                <td>30 Dec 2018</td>
-                                <td>10:00am - 11:00am</td>
+                                <td>APT-{{$data->id}}</td>
+                                {{--
+                                <td><img width="28" height="28" src="img/user.jpg" class="rounded-circle m-r-5" alt="">
+                                    Denise Stevens
+                                </td>
+                                --}}
+                                <td>{{$data->age}}</td>
+                                <td>{{$data->p_name}}</td>
+                                <td>{{$data->speciality}}</td>
+                                <td>{{$data->date}}</td>
                                 <td><span class="custom-badge status-red">Inactive</span></td>
                                 <td class="text-right">
                                     <div class="dropdown dropdown-action">
@@ -49,25 +54,8 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>APT0002</td>
-                                <td><img width="28" height="28" src="img/user.jpg" class="rounded-circle m-r-5" alt=""> Denise Stevens</td>
-                                <td>35</td>
-                                <td>Henry Daniels</td>
-                                <td>Cardiology</td>
-                                <td>30 Dec 2018</td>
-                                <td>10:00am - 11:00am</td>
-                                <td><span class="custom-badge status-green">Active</span></td>
-                                <td class="text-right">
-                                    <div class="dropdown dropdown-action">
-                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="edit-appointment.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_appointment"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            @endforeach
+
                             </tbody>
                         </table>
                     </div>

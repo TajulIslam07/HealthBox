@@ -50,7 +50,7 @@
                                 </li>
                                     <li ><a href="{{route('all-doctor')}}">Doctors <i class="icofont-rounded-down"></i></a>
                                         <ul class="dropdown">
-                                            <li><a href="{{route('appointment')}}">Appointment</a></li>
+                                            <li><a href="{{route('userAppointment')}}">Appointment</a></li>
                                         </ul>
                                     </li>
                                 <li><a href="#">Services </a>

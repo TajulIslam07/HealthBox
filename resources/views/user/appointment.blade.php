@@ -7,7 +7,7 @@
             <div class="col-lg-12">
                 <div class="section-title">
                     <h2>We Are Always Ready to Help You. Book An Appointment</h2>
-                    <img src="assets/img/section-img.png" alt="#">
+                    <img src={{asset("assets/img/section-img.png")}} alt="#">
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
                 </div>
             </div>
@@ -34,13 +34,44 @@
                                 <input name="phone" type="text" placeholder="Phone">
                             </div>
                         </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group">
+                                <input name="age" type="text" placeholder="age">
+                            </div>
+                        </div>
 
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="form-group">
                                 <div tabindex="0">
-                                    <select class="list nice-select form-control wide" name="doctor">
+                                    <select class="list nice-select form-control wide text-primary" name="bloodGroup">
+                                      <option selected disabled>Select Blood</option>
+                                      <option>A+</option>
+                                      <option>A-</option>
+                                      <option>B+</option>
+                                      <option>B-</option>
+                                      <option>AB+</option>
+                                      <option>AB-</option>
+                                      <option>O+</option>
+                                      <option>O-</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group">
+                                <input name="phone" type="text" placeholder="Phone">
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group">
+                                <div tabindex="0">
+                                    <select class="list nice-select form-control wide text-primary" name="doctor">
                                         @foreach($dctr as $data)
-                                        <option value="{{$data->id}}">{{$data->name1}}---{{$data->speciality}}</option>
+                                            <option selected disabled>Select Doctor</option>
+                                        <option value="{{$data->id}}">{{$data->d_name}}---{{$data->speciality}}</option>
 
                                     @endforeach
                                     </select>
