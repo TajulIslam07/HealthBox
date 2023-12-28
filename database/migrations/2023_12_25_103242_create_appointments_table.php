@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('phone');
             //$table->string('speciality');
             $table->integer('doctor_id');
+            //$table->string('doctor_name')->nullable();
             $table->date('date');
             $table->string('message')->nullable();
            // $table->integer('serial')->nullable();

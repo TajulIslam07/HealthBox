@@ -5,22 +5,27 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Age</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Speciality</th>
+                    <th>Medical</th>
                 </tr>
                 </thead>
                 <tbody>
+                @foreach($dctr as $data)
                 <tr>
-                    <th scope="row">1</th>
-                    <td>John Doe</td>
-                    <td>25</td>
+                    <th>{{$loop->iteration}}</th>
+                    <td>{{$data->d_name}}</td>
+                    <td>{{$data->speciality}}</td>
+                    <td>{{$data->medical_degree}}</td>
                 </tr>
+                @endforeach
 
                 <!-- Add more rows as needed -->
                 </tbody>
             </table>
 
     </div>
+
 
 @endsection

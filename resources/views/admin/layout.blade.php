@@ -22,7 +22,8 @@
                     <a class="btn" href="{{ route('logout') }}"
                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                        <i class="fa fa-cog"></i> <span>Logout</span>
+
+                        <i class="fa-solid fa-right-from-bracket"></i> <span>Logout</span>
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf
@@ -47,17 +48,6 @@
                 </li>
                 <li>
                     <a href="{{route('departments')}}"><i class="fa-regular fa-hospital"></i> <span>Departments</span></a>
-                </li>
-
-                <li>
-                    <a href="{{route('chat')}}"><i class="fa fa-comments"></i> <span>Chat</span> <span class="badge badge-pill bg-primary float-right">5</span></a>
-                </li>
-                <li class="submenu">
-                    <a href="#"><i class="fa fa-video-camera camera"></i> <span> Calls</span> <span class="menu-arrow"></span></a>
-                    <ul style="display: none;">
-                        <li><a href="{{route('voiceCall')}}">Voice Call</a></li>
-                        <li><a href="incoming-call.html">Incoming Call</a></li>
-                    </ul>
                 </li>
 
                 <li class="submenu">

@@ -23,6 +23,10 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('email')->nullable();
             $table->string('room')->nullable();
+            $table->string('working_days')->nullable();
+            $table->string('time')->nullable();
+            $table->string('message')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
