@@ -11,13 +11,25 @@
     <link rel="stylesheet" type="text/css" href={{asset('admin/css/select2.min.css')}}>
     <link rel="stylesheet" type="text/css" href={{asset('admin/css/style.css')}}>
 </head>
-
 <body>
 <div class="sidebar" id="sidebar">
     <div class="sidebar-inner slimscroll">
         <div id="sidebar-menu" class="sidebar-menu">
             <ul>
                 <li class="menu-title">Main</li>
+                <li class="bg-primary">
+
+                    <a class="btn" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                        <i class="fa fa-cog"></i> <span>Logout</span>
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+
+                </li>
+
                 <li>
                     <a href="{{route('adminDashboard')}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
                 </li>
@@ -67,6 +79,7 @@
                 <li>
                     <a href="settings.html"><i class="fa fa-cog"></i> <span>Settings</span></a>
                 </li>
+
             </ul>
         </div>
     </div>

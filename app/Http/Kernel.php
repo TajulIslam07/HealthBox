@@ -4,6 +4,7 @@ namespace App\Http;
 
 
 
+use App\Http\Middleware\AuthAdmin;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -68,5 +69,6 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'userPage' => \App\Http\Middleware\authUser::class,
         'doctorPage' => \App\Http\Middleware\AuthDoctor::class,
+        'adminPage'=> \App\Http\Middleware\AuthAdmin::class,
     ];
 }

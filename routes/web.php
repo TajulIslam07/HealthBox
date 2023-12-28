@@ -29,7 +29,7 @@ return  redirect('/login');
 
 Route::middleware(['auth','userPage'])->group(function (){
 Route::get('/user-home', [\App\Http\Controllers\User\HomeController::class,'index'])->name('userHome');
-Route::get('/appointment',[\App\Http\Controllers\User\HomeController::class,'appointment'])->name('appointment');
+Route::get('/user-appointment',[\App\Http\Controllers\User\HomeController::class,'appointment'])->name('userAppointment');
 Route::post('/appointment-data',[AppointmentController::class,'store'])->name('appointment-data');
 Route::get('/my-appointment',[AppointmentController::class,'index'])->name('myappointmemnt');
 
@@ -45,8 +45,10 @@ Route::get('/report-details/{id}',[\App\Http\Controllers\doctor\DoctorController
 Route::post('/report-upload/{id}',[\App\Http\Controllers\doctor\DoctorController::class,'reportUpload'])->name('prescriptionUpload');
 });
 
-
+Route::group(['middleware'=>['auth','adminPage']],function (){
+});
 Route::get('/admin-dashboard', [AdminController::class,'adminDashboard'])->name('adminDashboard');
+
 Route::get('/add-appointment' , [AdminController::class,'addAppointment'])->name('addApointment');
 Route::get('/add-blog' , [AdminController::class,'addBlog'])->name('addBlog');
 Route::get('/add-department' , [AdminController::class,'addDepartment'])->name('addDepartment');

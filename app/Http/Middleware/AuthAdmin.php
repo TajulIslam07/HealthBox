@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
-class AuthDoctor
+class AuthAdmin
 {
     /**
      * Handle an incoming request.
@@ -16,16 +16,11 @@ class AuthDoctor
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::user()->utype == 'd'){
-        return $next($request);
-        }elseif (Auth::user()->utype == 'u'){
-            return redirect()->route('userHome');
-        }elseif (Auth::user()->utype == 'admin'){
-            return redirect()->route('adminDashboard');
-        }
-        else{
-            session()->flush();
+        if (Auth::user()->utype == 'admin'){
+            return $next($request);
+        }else{
             return redirect()->route('login');
         }
+
     }
 }

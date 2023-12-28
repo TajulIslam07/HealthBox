@@ -62,10 +62,6 @@ class DoctorController extends Controller
     public function editDoctorsUpload(Request $request){
 
        $dctr1= Doctor::find(Auth::id());
-       if (!$dctr1){
-           $dctr1=new Doctor();
-           $dctr1->user_id=Auth::id();
-       }
            $dctr1->d_name=$request->name;
            $dctr1->speciality=$request->speciality;
            $dctr1->description=$request->description;
