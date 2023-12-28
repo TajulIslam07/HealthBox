@@ -19,22 +19,22 @@
                 </thead>
                 @if(!$appointment)
                 @else
+
                     @foreach($appointment as $data)
-                @for($i=1;$i<=count($appointment);$i++)
                 <tbody>
                 <tr>
-                    <td>{{$i}}</td>
+                    <td>{{ $loop->iteration }}</td>
                     <td>{{$data->name}}</td>
-                    <td>{{$data->name}}</td>
-                    <td>{{$data->name}}</td>
-                    <td>{{$data->name}}</td>
-                    <td>{{$data->name}}</td>
-                    <td>{{$data->name}}</td>
-                    <td>{{$data->name}}</td>
-                    <td>{{$data->name}}</td>
+                    <td>{{$data->email}}</td>
+                    <td>{{$data->phone}}</td>
+                    <td>{{$data->name1}}</td>
+                    <td>{{$data->date}}</td>
+                    <td>{{$data->id}}</td>
+                    <td>{{$data->room}}</td>
+                    <td>{{$data->status}}</td>
                 </tr>
                 </tbody>
-                @endfor
+
                     @endforeach
                 @endif
             </table>

@@ -12,23 +12,24 @@
                     <th>No.</th>
                     <th>Name</th>
                     <th>Appointment Time</th>
-                    <th>Serial No.</th>
+
                     <th>Details & Prescription</th>
 
                 </tr>
                 </thead>
-                @for($i=1;$i<=5;$i++)
+
+                @foreach($patient as $data)
                     <tbody>
                     <tr>
-                        <td>{{$i}}</td>
-                        <td>John Doe</td>
-                        <td>Admin</td>
-                        <td>Admin</td>
+                         <td>{{ $loop->iteration }}</td>
+                        <td>{{$data->name}}</td>
+                        <td>{{$data->date}}</td>
 
-                        <td><a href="{{route('detailsPrescription')}}" class="btn bg-primary">Details & Write Prescription</a></td>
+                        <td><a href="{{url('/report-details',['id'=>$data->id])}}" class="btn bg-primary">Details & Write Prescription</a></td>
                     </tr>
                     </tbody>
-                @endfor
+
+                @endforeach
             </table>
         </div>
     </div>
