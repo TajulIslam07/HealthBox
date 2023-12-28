@@ -43,7 +43,7 @@ class AdminController extends Controller
     }
 
     public function appointment (){
-        return view('admin.appointment');
+        return view('admin.appointments');
 
     }
 
