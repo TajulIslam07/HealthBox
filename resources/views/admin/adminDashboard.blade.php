@@ -95,20 +95,22 @@
                             <h4 class="card-title mb-0">Doctors</h4>
                         </div>
                         <div class="card-body">
-                            @foreach($doctor as $data1) @endforeach
-                            <ul class="contact-list">
-                                <li>
-                                    <div class="contact-cont">
-                                        <div class="float-left user-img m-r-10">
-                                            <a href="profile.html" title="John Doe"><img src={{asset('doctor/images/profile/'.$data1->image)}} alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
+                            @foreach($doctor as $data1)
+                                <ul class="contact-list">
+                                    <li>
+                                        <div class="contact-cont">
+                                            <div class="float-left user-img m-r-10">
+                                                <a href="profile.html" title="John Doe"><img src={{asset('doctor/images/profile/'.$data1->image)}} alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
+                                            </div>
+                                            <div class="contact-info">
+                                                <span class="contact-name text-ellipsis">{{$data1->d_name}}</span>
+                                                <span class="contact-date">{{$data1->medical_degree}}</span>
+                                            </div>
                                         </div>
-                                        <div class="contact-info">
-                                            <span class="contact-name text-ellipsis">{{$data1->d_name}}</span>
-                                            <span class="contact-date">{{$data1->medical_degree}}</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
+                            @endforeach
+
                         </div>
                         <div class="card-footer text-center bg-white">
                             <a href="{{route('doctors')}}" class="text-muted">View all Doctors</a>
