@@ -48,8 +48,8 @@ Route::post('/report-upload/{id}',[\App\Http\Controllers\doctor\DoctorController
 Route::group(['middleware'=>['auth','adminPage']],function (){
 });
 Route::get('/admin-dashboard', [AdminController::class,'adminDashboard'])->name('adminDashboard');
-
 Route::get('/add-appointment' , [AdminController::class,'addAppointment'])->name('addApointment');
+
 Route::get('/add-blog' , [AdminController::class,'addBlog'])->name('addBlog');
 Route::get('/add-department' , [AdminController::class,'addDepartment'])->name('addDepartment');
 Route::get('/add-doctor' , [AdminController::class,'addDoctor'])->name('addDoctor');
@@ -67,6 +67,6 @@ Route::get('/edit-profile' , [AdminController::class,'editProfile'])->name('edit
 Route::get('/main' , [AdminController::class,'main'])->name('main');
 Route::get('/patients' , [AdminController::class,'patients'])->name('patients');
 Route::get('/schedule' , [AdminController::class,'schedule'])->name('schedule');
-Route::get('/settings' , [AdminController::class,'settings'])->name('settings');
+
 Route::get('/voice-call' , [AdminController::class,'voiceCall'])->name('voiceCall');
 

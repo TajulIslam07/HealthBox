@@ -1,6 +1,7 @@
 @extends('admin.layout')
 
 @section('adminBody')
+
     <div class="page-wrapper">
         <div class="content">
             <div class="row">
@@ -47,7 +48,7 @@
                 <div class="col-12 col-md-6 col-lg-8 col-xl-8">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title d-inline-block">Upcoming Appointments</h4> <a href="appointments.html" class="btn btn-primary float-right">View all</a>
+                            <h4 class="card-title d-inline-block">Upcoming Appointments</h4> <a href="{{route('appointment')}}" class="btn btn-primary float-right">View all</a>
                         </div>
                         <div class="card-body p-0">
                             <div class="table-responsive">
@@ -228,7 +229,7 @@
                             </ul>
                         </div>
                         <div class="card-footer text-center bg-white">
-                            <a href="doctors.html" class="text-muted">View all Doctors</a>
+                            <a href="{{route('doctors')}}" class="text-muted">View all Doctors</a>
                         </div>
                     </div>
                 </div>
@@ -237,7 +238,7 @@
                 <div class="col-12 col-md-6 col-lg-8 col-xl-8">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title d-inline-block">New Patients </h4> <a href="patients.html" class="btn btn-primary float-right">View all</a>
+                            <h4 class="card-title d-inline-block">New Patients </h4> <a href="{{route('patients')}}" class="btn btn-primary float-right">View all</a>
                         </div>
                         <div class="card-block">
                             <div class="table-responsive">
