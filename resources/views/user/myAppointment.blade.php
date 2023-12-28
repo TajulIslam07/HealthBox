@@ -13,7 +13,6 @@
                     <th>Doctor</th>
                     <th>Appointment Time</th>
                     <th>Serial No.</th>
-                    <th>Room No.</th>
                     <th>Status</th>
                 </tr>
                 </thead>
@@ -24,13 +23,15 @@
                 <tbody>
                 <tr>
                     <td>{{ $loop->iteration }}</td>
-                    <td>{{$data->name}}</td>
+                    <td>{{$data->p_name}}</td>
                     <td>{{$data->email}}</td>
                     <td>{{$data->phone}}</td>
-                    <td>{{$data->name1}}</td>
+                    <td>{{$data->d_name}}</td>
                     <td>{{$data->date}}</td>
-                    <td>{{$data->id}}</td>
+                    <td>{{$data->serial_id}}</td>
+                    {{--
                     <td>{{$data->room}}</td>
+                    --}}
                     <td>{{$data->status}}</td>
                 </tr>
                 </tbody>

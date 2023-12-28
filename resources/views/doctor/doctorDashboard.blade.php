@@ -17,12 +17,11 @@
 
                 </tr>
                 </thead>
-
                 @foreach($patient as $data)
                     <tbody>
                     <tr>
-                         <td>{{ $loop->iteration }}</td>
-                        <td>{{$data->name}}</td>
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{$data->p_name}}</td>
                         <td>{{$data->date}}</td>
 
                         <td><a href="{{url('/report-details',['id'=>$data->id])}}" class="btn bg-primary">Details & Write Prescription</a></td>

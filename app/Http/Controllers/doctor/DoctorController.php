@@ -4,6 +4,7 @@ namespace App\Http\Controllers\doctor;
 
 use App\Http\Controllers\Controller;
 use App\Models\Doctor;
+use App\Models\Serial;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -28,7 +29,14 @@ class DoctorController extends Controller
     }
     public function dashboard()
     {
-        $patient=Appointment::where('doctor_id',Auth::id())->get();
+        //$patient=Appointment::where('doctor_id',Auth::id())->get();
+        $patient=DB::table('appointments')
+            ->where('appointments.doctor_id',Auth::id())
+            ->where('appointments.date',date('Y-m-d'))
+            ->where('status','w')
+            ->join('serials','serials.appointment_id','=','appointments.id')->orderBy('serial_id','asc')
+            ->get();
+
         return view('doctor.doctorDashboard',compact('patient'));
     }
 
@@ -48,7 +56,7 @@ class DoctorController extends Controller
             ->where('users.id',Auth::id())
             ->join('doctors','doctors.user_id','=','users.id')
             ->get();
-
+           // dd($dctr);
         return view('doctor.editDoctor',['dctr'=>$dctr]);
     }
     public function editDoctorsUpload(Request $request){
@@ -58,7 +66,7 @@ class DoctorController extends Controller
            $dctr1=new Doctor();
            $dctr1->user_id=Auth::id();
        }
-           $dctr1->name=$request->name;
+           $dctr1->d_name=$request->name;
            $dctr1->speciality=$request->speciality;
            $dctr1->description=$request->description;
            $dctr1->medical_degree=$request->medical_degree;
@@ -75,7 +83,21 @@ class DoctorController extends Controller
 
     }
     public function details($id){
-        return view('doctor.detailsPrescription');
+        $patient=Appointment::where('id',$id)->get();
+        //dd($patient);
+        return view('doctor.detailsPrescription',compact('patient'));
+    }
+    public function reportUpload($id ,Request $request){
+               // dd($id);
+                $report=Serial::where('appointment_id',$id)->where('doctor_id',Auth::id())->first();
+               //dd($report);
+                $report->report=$request->report;
+                $report->medicine=$request->medicine;
+                $report->aboutPatient=$request->aboutPatient;
+                $report->status='Done';
+                $report->save();
+                return redirect()->back();
+                //dd($report);
     }
 
 }

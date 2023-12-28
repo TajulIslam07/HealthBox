@@ -15,13 +15,14 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
-            $table->string('name')->nullable();
+            $table->string('d_name')->nullable();
             $table->string('speciality')->nullable();
             $table->string('description')->nullable();
             $table->string('medical_degree')->nullable();
             $table->integer('phone')->nullable();
             $table->string('image')->nullable();
             $table->string('email')->nullable();
+            $table->string('room')->nullable();
             $table->timestamps();
         });
     }
