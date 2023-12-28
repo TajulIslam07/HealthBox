@@ -42,6 +42,7 @@ Route::get('/all-doctors', [\App\Http\Controllers\doctor\DoctorController::class
 Route::get('/edit-doctors', [\App\Http\Controllers\doctor\DoctorController::class, 'editDoctors'])->name('editDoctors');
 Route::post('/edit-doctors', [\App\Http\Controllers\doctor\DoctorController::class, 'editDoctorsUpload'])->name('editDoctorsUpload');
 Route::get('/report-details/{id}',[\App\Http\Controllers\doctor\DoctorController::class,'details']);
+Route::post('/report-upload/{id}',[\App\Http\Controllers\doctor\DoctorController::class,'reportUpload'])->name('prescriptionUpload');
 });
 
 
