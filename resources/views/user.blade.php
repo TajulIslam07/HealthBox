@@ -70,10 +70,9 @@
                                         <i class="fa fa-ambulance"></i>
                                     </div>
                                     <div class="single-content">
-                                        <span>Lorem Amet</span>
+                                        <span></span>
                                         <h4>Emergency Cases</h4>
-                                        <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus
-                                            convallis sodales.</p>
+                                        <p>Burns, Severe Allergic Reaction (Anaphylaxis), Stroke Symptoms, Seizures, Diabetic Emergency, Poisoning, Severe Bleeding, Breathing Difficulty etc.</p>
                                         <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -87,7 +86,7 @@
                                         <i class="icofont-prescription"></i>
                                     </div>
                                     <div class="single-content">
-                                        <span>Fusce Porttitor</span>
+                                        <span></span>
                                         <h4>Doctors Timetable</h4>
                                         <p>Tajgkhsgkgsjk</p>
                                         <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
@@ -103,7 +102,7 @@
                                         <i class="icofont-ui-clock"></i>
                                     </div>
                                     <div class="single-content">
-                                        <span>Donec luctus</span>
+                                        <span></span>
                                         <h4>Opening Hours</h4>
                                         <ul class="time-sidual">
                                             <li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
@@ -129,7 +128,9 @@
                         <div class="section-title">
                             <h2>We Are Always Ready to Help You & Your Family</h2>
                             <img src="img/section-img.png" alt="#">
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                            <p>Welcome to our smart healthcare community, where your well-being is our top priority. At HealthBox, we are always ready to extend a helping hand to you and your family. Our dedicated team of healthcare professionals is committed to providing personalized care and support, ensuring that you experience the highest quality of service.</p>
+
+                            <p>Your health journey is our shared responsibility, and we are dedicated to building a lasting partnership with you and your loved ones. With HealthBox, trust that you have a reliable ally for all your healthcare needs – because we believe in a healthier, happier tomorrow, today.</p>
                         </div>
                     </div>
                 </div>
@@ -141,7 +142,7 @@
                                 <i class="icofont icofont-ambulance-cross"></i>
                             </div>
                             <h3>Emergency Help</h3>
-                            <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                            <p>We guarantee prompt service during urgent situations. With only a few clicks, you may get complete support, share your location for quick response, and communicate in real-time with healthcare specialists. You may be confident that we value your privacy. You may rely on us to be your trustworthy friend when you need us.</p>
                         </div>
                         <!-- End Single features -->
                     </div>
@@ -152,7 +153,7 @@
                                 <i class="icofont icofont-medical-sign-alt"></i>
                             </div>
                             <h3>Enriched Pharmecy</h3>
-                            <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                            <p>where we encounter individualized care. Our advanced online platform simplifies prescription management, offering convenience at your fingertips. Trust our team of dedicated pharmacists for expert advice and a comprehensive range of high-quality medications. We go beyond traditional services, providing holistic healthcare solutions to enrich your life. Experience the future of pharmacy with Enriched – where innovation and compassion converge for your well-being."</p>
                         </div>
                         <!-- End Single features -->
                     </div>
@@ -163,7 +164,7 @@
                                 <i class="icofont icofont-stethoscope"></i>
                             </div>
                             <h3>Medical Treatment</h3>
-                            <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                            <p>Experience a new era of healthcare with our smart medical treatments. We blend cutting-edge technology with personalized care, offering precision diagnostics, tailored therapies, and a connected ecosystem. Our commitment is to provide accessible, intelligent, and compassionate medical treatment, ensuring a healthier and happier life for all. Welcome to the future of healthcare, where innovation meets care.</p>
                         </div>
                         <!-- End Single features -->
                     </div>
@@ -236,7 +237,7 @@
                         <div class="section-title">
                             <h2>We Offer Different Services To Improve Your Health</h2>
                             <img src="assets/img/section-img.png" alt="#">
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                            <p>Discover a personalized approach to health at our smart healthcare platform. From preventive care to specialized treatments, our diverse services cater to your unique needs. Our expert team, fueled by cutting-edge technology, provides high-quality, patient-centered care. Whether you're proactively improving or managing a condition, trust us to be your partner in optimal well-being. Experience the future of healthcare with our smart solutions. Your health, our priority.</p>
                         </div>
                     </div>
                 </div>
@@ -245,10 +246,8 @@
                         <!-- Start Choose Left -->
                         <div class="choose-left">
                             <h3>Who We Are</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra antege vel est
-                                lobortis, a commodo magna rhoncus. In quis nisi non emet quam pharetra commodo. </p>
-                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                                himenaeos. </p>
+                            <p>We're more than a healthcare provider; we're a dedicated team committed to your well-being. Our mission is to inspire healthier lives through innovative solutions. With cutting-edge technology like predictive analytics and telemedicine, we personalize your healthcare experience. We're not just about data; we're your partners in health, focusing on mind, body, and spirit. Experience healthcare that's intelligent, compassionate, and tailored to you. Welcome to the future of wellness – welcome to us. </p>
+
                             <div class="row">
                                 <div class="col-lg-6">
                                     <ul class="list">
@@ -299,8 +298,7 @@
                     <div class="col-lg-12 col-md-12 col-12">
                         <div class="content">
                             <h2>Do you need Emergency Medical Care? Call @ 1234 56789</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis
-                                nec gravida.</p>
+                            <p>Your health is our priority! If you find yourself in need of immediate medical care, don't hesitate – call our dedicated Emergency Medical Care hotline at 1234 56789. Trust us to deliver prompt and efficient emergency medical care when you need it most. Your safety is our commitment – call now, and let us be your partner in health.</p>
                             <div class="button">
                                 <a href="#" class="btn">Contact Now</a>
                                 <a href="#" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>
@@ -320,7 +318,7 @@
                         <div class="section-title">
                             <h2>We Maintain Cleanliness Rules Inside Our Hospital</h2>
                             <img src="assets/img/section-img.png" alt="#">
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                            <p>Step into our hospital, where cleanliness is our top priority. Our dedicated team ensures every inch is spotless, from common areas to patient rooms. Rigorous sterilization protocols and regular sanitation keep infections at bay. We believe in a culture of responsibility, where staff and visitors contribute to a pristine environment. Your well-being is paramount, and our commitment to cleanliness reflects our dedication to providing a safe and healing space. Experience the difference at our hospital – where health meets hygiene.</p>
                         </div>
                     </div>
                 </div>
@@ -336,7 +334,7 @@
                         <div class="section-title">
                             <h2>We Offer Different Services To Improve Your Health</h2>
                             <img src="assets/img/section-img.png" alt="#">
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                            <p>Your one-stop destination for a healthier you! We offer a range of personalized services to elevate your well-being, from advanced medical consultations to cutting-edge fitness programs. Our experienced team is committed to providing top-notch care, leveraging innovative technologies to empower you with the tools needed for informed health decisions. Join us on this journey towards lasting vitality and discover the future of smart healthcare at HealthBox.</p>
                         </div>
                     </div>
                 </div>
@@ -346,8 +344,7 @@
                         <div class="single-service">
                             <i class="icofont icofont-prescription"></i>
                             <h4><a href="service-details.html">General Treatment</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-                                imperdiet. </p>
+                            <p>Experience tailored General Treatment plans, advanced diagnostics, and convenient telemedicine. Our collaborative ecosystem ensures comprehensive care, while continuous monitoring and educational resources empower you on your wellness journey. Trust us for personalized, accessible, and empowering healthcare.</p>
                         </div>
                         <!-- End Single Service -->
                     </div>
