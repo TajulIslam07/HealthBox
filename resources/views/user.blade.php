@@ -88,7 +88,9 @@
                                     <div class="single-content">
                                         <span></span>
                                         <h4>Doctors Timetable</h4>
-                                        <p>Tajgkhsgkgsjk</p>
+                                        <p> Monday       - Dr. Smith        <br>  - Internal Medicine   - 9:00 AM - 5:00 PM              - Cardiology (2:00 PM - 4:00 PM)<br>
+                                            Thursday     - Dr. Davis       <br>   - Dermatology        - 9:30 AM - 4:30 PM              <br>- Acne Care (1:00 PM - 3:00 PM)<br>
+                                            Friday       - Dr. Williams     <br>  - Gynecology          - 8:00 AM - 4:00 PM             <br> - Women's Health (2:00 PM - 4:00 PM)</p>
                                         <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -297,7 +299,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-12">
                         <div class="content">
-                            <h2>Do you need Emergency Medical Care? Call @ 1234 56789</h2>
+                            <h2>Do you need Emergency Medical Care? Call +880 1234 567899</h2>
                             <p>Your health is our priority! If you find yourself in need of immediate medical care, don't hesitate – call our dedicated Emergency Medical Care hotline at 1234 56789. Trust us to deliver prompt and efficient emergency medical care when you need it most. Your safety is our commitment – call now, and let us be your partner in health.</p>
                             <div class="button">
                                 <a href="#" class="btn">Contact Now</a>
@@ -353,8 +355,7 @@
                         <div class="single-service">
                             <i class="icofont icofont-tooth"></i>
                             <h4><a href="service-details.html">Teeth Whitening</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-                                imperdiet. </p>
+                            <p>Revitalize your smile with teeth whitening – a quick, non-invasive solution for a brighter, more confident you. Choose from convenient in-office treatments or at-home kits for noticeable results and a radiant smile.</p>
                         </div>
                         <!-- End Single Service -->
                     </div>
@@ -363,8 +364,7 @@
                         <div class="single-service">
                             <i class="icofont icofont-heart-alt"></i>
                             <h4><a href="service-details.html">Heart Surgery</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-                                imperdiet. </p>
+                            <p>From minimally invasive procedures to precision medicine and robotic-assisted surgeries, innovation is transforming patient experiences. Advanced imaging, artificial intelligence, and remote monitoring ensure unparalleled precision and postoperative care. Embrace a new era in cardiovascular healthcare for quicker recovery, personalized treatments, and improved outcomes.</p>
                         </div>
                         <!-- End Single Service -->
                     </div>
@@ -373,8 +373,7 @@
                         <div class="single-service">
                             <i class="icofont icofont-listening"></i>
                             <h4><a href="service-details.html">Ear Treatment</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-                                imperdiet. </p>
+                            <p>Discover expert ear care at our smart healthcare hub. Our specialists use cutting-edge tech for precise diagnostics and offer innovative therapies for various ear conditions. From pediatric care to holistic approaches, we prioritize your auditory wellness. Trust us for personalized treatments and a path to sound health.</p>
                         </div>
                         <!-- End Single Service -->
                     </div>
@@ -383,8 +382,7 @@
                         <div class="single-service">
                             <i class="icofont icofont-eye-alt"></i>
                             <h4><a href="service-details.html">Vision Problems</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-                                imperdiet. </p>
+                            <p>Unlock the secrets to healthy eyes on our smart healthcare platform. From subtle vision shifts to digital eye strain, we guide you through common issues. Embrace proactive solutions, telemedicine, and lifestyle tips for lasting visual well-being. Your clear sight, our priority!</p>
                         </div>
                         <!-- End Single Service -->
                     </div>
@@ -393,8 +391,7 @@
                         <div class="single-service">
                             <i class="icofont icofont-blood"></i>
                             <h4><a href="service-details.html">Blood Transfusion</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-                                imperdiet. </p>
+                            <p>In the realm of healthcare, blood transfusion stands as a beacon of hope, offering tailored treatment for various conditions. From emergency resilience to advancing compatibility and safety. As research opens new frontiers, the future of blood transfusion promises even more efficient and personalized healthcare possibilities.</p>
                         </div>
                         <!-- End Single Service -->
                     </div>
@@ -410,9 +407,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title">
-                            <h2>Keep up with Our Most Recent Medical News.</h2>
+                            <h2>Keep up with Our Most Recent Medical News</h2>
                             <img src="assets/img/section-img.png" alt="#">
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                            <p>Our concise and insightful articles keep you informed about the latest breakthroughs, treatments, and health trends. Whether it's groundbreaking research or practical tips for wellness, we've got you covered. Empower yourself with the knowledge to make informed health choices. Your well-being is our priority – discover the future of healthcare with us."</p>
                         </div>
                     </div>
                 </div>
@@ -425,10 +422,9 @@
                             </div>
                             <div class="news-body">
                                 <div class="news-content">
-                                    <div class="date">22 Aug, 2020</div>
+                                    <div class="date">22 Nov, 2023</div>
                                     <h2><a href="blog-single.html">We have annnocuced our new product.</a></h2>
-                                    <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt sed do incididunt sed.</p>
+                                    <p class="text">Introducing the SmartHealth Hub—our latest innovation in healthcare technology! This groundbreaking product enhances patient care, streamlines workflows, and empowers healthcare professionals. Stay tuned for a closer look at its cutting-edge features, symbolizing our commitment to a smarter, more connected future in healthcare. Thank you for joining us on this exciting journey!</p>
                                 </div>
                             </div>
                         </div>
@@ -442,10 +438,24 @@
                             </div>
                             <div class="news-body">
                                 <div class="news-content">
-                                    <div class="date">15 Jul, 2020</div>
+                                    <div class="date">29 Nov, 2023</div>
                                     <h2><a href="blog-single.html">Top five way for solving teeth problems.</a></h2>
-                                    <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt sed do incididunt sed.</p>
+                                    <p class="text">1. Regular Dental Check-ups:
+                                        - Schedule routine check-ups for early issue detection.
+
+                                        2. Effective Oral Hygiene:
+                                        - Brush and floss daily with fluoride products.
+
+                                        3. Balanced Diet:
+                                        - Consume a nutrient-rich diet, limit sugars.
+
+                                        4. Address Teeth Grinding:
+                                        - Use a nightguard to prevent damage from grinding.
+
+                                        5. Orthodontic Solutions:
+                                        - Consult an orthodontist for alignment issues.
+
+                                        Maintain these practices for a healthier, problem-free smile.</p>
                                 </div>
                             </div>
                         </div>
@@ -459,10 +469,9 @@
                             </div>
                             <div class="news-body">
                                 <div class="news-content">
-                                    <div class="date">05 Jan, 2020</div>
+                                    <div class="date">05 Dec, 2023</div>
                                     <h2><a href="blog-single.html">We provide highly business soliutions.</a></h2>
-                                    <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt sed do incididunt sed.</p>
+                                    <p class="text">Revolutionize your healthcare business with our smart solutions. We provide cutting-edge technology, seamless integration, and user-friendly experiences. From advanced analytics to streamlined workflows, we empower your organization to thrive in the digital era. Elevate your healthcare business to new heights with our innovative and efficient solutions.</p>
                                 </div>
                             </div>
                         </div>

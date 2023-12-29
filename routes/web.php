@@ -20,6 +20,10 @@ use App\Http\Controllers\admin\AdminController;
 
 Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/all-doctor',[IndexController::class,'allDoctor'])->name('all-doctor');
+Route::get('/portfolio',[IndexController::class,'portfolio'])->name('portfolio');
+Route::get('/contact',[IndexController::class,'contact'])->name('contact');
+Route::get('/userblog',[IndexController::class,'userblog'])->name('userblog');
+
 Auth::routes();
 Route::post('/', function () {
 Auth::logout();
@@ -71,4 +75,6 @@ Route::get('/patients' , [AdminController::class,'patients'])->name('patients');
 Route::get('/schedule' , [AdminController::class,'schedule'])->name('schedule');
 
 Route::get('/voice-call' , [AdminController::class,'voiceCall'])->name('voiceCall');
+
+
 
