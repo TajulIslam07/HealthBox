@@ -46,9 +46,33 @@ class AdminController extends Controller
 
     }
 
-    public function addSchedule (){
-        return view('admin.addSchedule');
+    public function addSchedule ($id){
 
+        $dctr=Doctor::where('id',$id)->get();
+
+        return view('admin.addSchedule',['doctor'=>$dctr]);
+
+    }
+    public function addScheduleUpload($id ,Request $request){
+        $dctr=Doctor::where('id',$id)->first();
+        //dd($request->all());
+        $dctr->working_days=$request->working_days;
+        $dctr->time=$request->time;
+        $dctr->message=$request->message;
+        $dctr->status=$request->status;
+        $dctr->save();
+        return redirect()->route('schedule');
+    }
+    public function addScheduleInactive($id){
+        $dctr=Doctor::where('id',$id)->first();
+        if ($dctr->status ==='Active'){
+        $dctr->status='Inactive';
+        }else{
+            $dctr->status='Active';
+
+        }
+        $dctr->save();
+        return redirect()->back();
     }
 
     public function appointment (){
@@ -104,7 +128,8 @@ class AdminController extends Controller
 
     }
     public function schedule (){
-        return view('admin.schedule');
+        $dctr=Doctor::all();
+        return view('admin.schedule',['doctor'=>$dctr]);
 
     }
     public function settings (){
