@@ -25,5 +25,18 @@ class IndexController extends Controller
         }
         return redirect()->back();
     }
+        public function portfolio(){
+        return view('portfolio');
+     }
+
+    public function contact(){
+        return view('contact');
+    }
+
+    public function userblog(){
+        return view('userblog');
+    }
+
+
 
 }
