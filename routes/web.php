@@ -20,6 +20,10 @@ use App\Http\Controllers\admin\AdminController;
 
 Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/all-doctor',[IndexController::class,'allDoctor'])->name('all-doctor');
+Route::get('/portfolio',[IndexController::class,'portfolio'])->name('portfolio');
+Route::get('/contact',[IndexController::class,'contact'])->name('contact');
+Route::get('/userblog',[IndexController::class,'userblog'])->name('userblog');
+
 Auth::routes();
 Route::post('/', function () {
 Auth::logout();
@@ -54,7 +58,9 @@ Route::get('/add-blog' , [AdminController::class,'addBlog'])->name('addBlog');
 Route::get('/add-department' , [AdminController::class,'addDepartment'])->name('addDepartment');
 Route::get('/add-doctor' , [AdminController::class,'addDoctor'])->name('addDoctor');
 Route::get('/add-patient' , [AdminController::class,'addPatient'])->name('addPatient');
-Route::get('/add-schedule' , [AdminController::class,'addSchedule'])->name('addSchedule');
+Route::get('/add-schedule/{id}' , [AdminController::class,'addSchedule'])->name('addSchedule');
+Route::post('/add-schedule/{id}' , [AdminController::class,'addScheduleUpload'])->name('addScheduleUpload');
+Route::get('/add-scheduleInactive/{id}' , [AdminController::class,'addScheduleInactive'])->name('addScheduleInactive');
 Route::get('/appointment' , [AdminController::class,'appointment'])->name('appointment');
 Route::get('/blog' , [AdminController::class,'blog'])->name('blog');
 Route::get('/blog-details' , [AdminController::class,'blogDetails'])->name('blogDetails');
@@ -69,4 +75,6 @@ Route::get('/patients' , [AdminController::class,'patients'])->name('patients');
 Route::get('/schedule' , [AdminController::class,'schedule'])->name('schedule');
 
 Route::get('/voice-call' , [AdminController::class,'voiceCall'])->name('voiceCall');
+
+
 

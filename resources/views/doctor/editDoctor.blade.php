@@ -28,7 +28,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="name">Doctor's Name</label>
-                                <input type="text" class="form-control" id="name" name="name" value="{{$data->name}}">
+                                <input type="text" class="form-control" id="name" name="d_name" value="{{$data->name}}">
                             </div>
                             <div class="form-group">
                                 <label for="specialty">Specialty</label>

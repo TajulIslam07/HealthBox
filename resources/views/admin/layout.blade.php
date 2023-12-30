@@ -46,9 +46,6 @@
                 <li>
                     <a href="{{route('schedule')}}"><i class="fa-regular fa-calendar"></i><span>Doctor Schedule</span></a>
                 </li>
-                <li>
-                    <a href="{{route('departments')}}"><i class="fa-regular fa-hospital"></i> <span>Departments</span></a>
-                </li>
 
                 <li class="submenu">
                     <a href="#"><i class="fa fa-commenting-o"></i> <span> Blog</span> <span class="menu-arrow"></span></a>
