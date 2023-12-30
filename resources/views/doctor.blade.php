@@ -31,20 +31,21 @@
             <!--/ End Slider Area -->
         </section>--}}
 <div class="container">
-   {{--<div class="card-deck m-3">
+    <div class="h1 m-2">All Doctors</div>
+   <div class="card-deck m-3">
         @foreach($dctr as $data)
         <div class="card">
             <img class="card-img-top" src="doctor/images/profile/{{$data->image}}" style="height: 18rem" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">{{$data->name}}</h5>
+                <h5 class="card-title">{{$data->d_name}}</h5>
                 <p class="card-text">{{$data->speciality}}</p>
+                <p class="card-text">{{$data->medical_degree}}</p>
             </div>
         </div>
         @endforeach
 
-    </div>--}}
-
-    <div class="row doctor-grid">
+    </div>
+    {{--<div class="row">
         <div class="col-md-4 col-sm-4  col-lg-3">
             @foreach($dctr as $data)
                 <div class="profile-widget">
@@ -61,7 +62,9 @@
             @endforeach
 
         </div>
-    </div>
+    </div>--}}
+
+
 </div>
 
 @endsection

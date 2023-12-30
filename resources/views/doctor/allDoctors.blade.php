@@ -1,7 +1,7 @@
 @extends('doctor.layout')
 @section('doctorBody')
     <div class="container-fluid">
-            <h2>Bootstrap Table Example</h2>
+            <h2>All Doctors</h2>
             <table class="table">
                 <thead>
                 <tr>

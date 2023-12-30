@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User\AppointmentController;
 use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\User\BloodDonerController;
 
 
 /*
@@ -38,6 +39,12 @@ Route::post('/appointment-data',[AppointmentController::class,'store'])->name('a
 Route::get('/my-appointment',[AppointmentController::class,'index'])->name('myappointmemnt');
 
 });
+Route::get('/blood_bank',[BloodDonerController::class,'bloodbank']);
+Route::get('/donate_blood',[BloodDonerController::class,'blooddonate']);
+Route::post('/form_req',[BloodDonerController::class,'form']);
+Route::get('/search_blood',[BloodDonerController::class,'srch']);
+Route::get('/bmi',[\App\Http\Controllers\User\HomeController::class,'bmi'])->name('bmi');
+Route::post('/bmis',[\App\Http\Controllers\User\HomeController::class,'bmis']);
 Route::middleware(['auth','doctorPage'])->group(function (){
 Route::get('/home', [\App\Http\Controllers\doctor\DoctorController::class, 'index'])->name('home');
 Route::get('/doctor-dashboard', [\App\Http\Controllers\doctor\DoctorController::class, 'dashboard'])->name('doctorDashboard');

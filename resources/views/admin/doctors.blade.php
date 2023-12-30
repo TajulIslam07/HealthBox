@@ -13,8 +13,9 @@
                 </div>
             </div>
             <div class="row doctor-grid">
+                @foreach($doctor as $data)
                 <div class="col-md-4 col-sm-4  col-lg-3">
-                    @foreach($doctor as $data)
+
                     <div class="profile-widget">
                         <div class="doctor-img">
                             <a class="avatar" href="profile.html"><img alt="" src={{asset('doctor/images/profile/'.$data->image)}} ></a>
@@ -32,9 +33,10 @@
                             <i class="fa fa-map-marker"></i> {{$data->medical_degree}}
                         </div>
                     </div>
-                    @endforeach
+
 
                 </div>
+                @endforeach
             </div>
             <div class="row">
                 <div class="col-sm-12">

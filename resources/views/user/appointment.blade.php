@@ -8,7 +8,7 @@
                 <div class="section-title">
                     <h2>We Are Always Ready to Help You. Book An Appointment</h2>
                     <img src={{asset("assets/img/section-img.png")}} alt="#">
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -58,11 +58,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input name="phone" type="text" placeholder="Phone">
-                            </div>
-                        </div>
+
 
 
                         <div class="col-lg-6 col-md-6 col-12">

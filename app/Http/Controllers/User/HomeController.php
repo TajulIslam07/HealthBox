@@ -4,7 +4,9 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Models\Doctor;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Contracts\Session;
 
 class HomeController extends Controller
 {
@@ -29,6 +31,32 @@ class HomeController extends Controller
        $dctr=Doctor::all();
 
         return view('user.appointment',compact('dctr'));
+    }
+    public function bmi(){
+        return view('user.bmi');
+    }
+    public function bmis(Request $request){
+       //dd($request->all());
+     $mass=$request->weight;
+        $height=$request->height * 0.3048;
+
+            $bmi = $mass/($height*$height);
+
+        if ($bmi <= 18.5) {
+            $output = "UNDERWEIGHT";
+
+        } else if ($bmi > 18.5 AND $bmi<=24.9 ) {
+            $output = "NORMAL WEIGHT";
+
+        } else if ($bmi > 24.9 AND $bmi<=29.9) {
+            $output = "OVERWEIGHT";
+
+        } else if ($bmi > 30.0) {
+            $output = "OBESE";
+        }
+
+        return redirect()->back()->with(array('bmi'=>$bmi,'output'=>$output));
+
     }
 
 }

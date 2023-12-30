@@ -32,9 +32,9 @@ class DoctorController extends Controller
         //$patient=Appointment::where('doctor_id',Auth::id())->get();
         $patient=DB::table('appointments')
             ->where('appointments.doctor_id',Auth::id())
-            ->where('appointments.date',date('Y-m-d'))
-            ->where('status','w')
             ->join('serials','serials.appointment_id','=','appointments.id')->orderBy('serial_id','asc')
+            //->where('appointments.date',date('Y-m-d'))
+            //->where('serials.status','w')
             ->get();
 
         return view('doctor.doctorDashboard',compact('patient'));

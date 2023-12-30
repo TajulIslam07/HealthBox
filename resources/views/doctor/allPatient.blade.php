@@ -25,7 +25,7 @@
                         <tbody>
                         <tr>
                             <td>{{ $loop->iteration }}</td>
-                            <td>{{$data->name}}</td>
+                            <td>{{$data->p_name}}</td>
                             <td>{{$data->email}}</td>
                             <td>{{$data->phone}}</td>
                         </tr>
