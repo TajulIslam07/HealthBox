@@ -10,48 +10,42 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <form>
+                    <form action="{{route('addAppointmentStore')}}" method="post">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Appointment ID</label>
-                                    <input class="form-control" type="text" value="APT-0001" readonly="">
+                                    <label>Patient Name</label>
+                                    <input type="text" class="form-control" id="datetimepicker3" name="p_name">
+
                                 </div>
                             </div>
+
+
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Patient Name</label>
-                                    <select class="select">
-                                        <option>Select</option>
-                                        <option>Jennifer Robinson</option>
-                                        <option>Terry Baker</option>
-                                    </select>
+                                    <label>Age</label>
+                                    <input type="text" class="form-control" id="datetimepicker3" name="age">
                                 </div>
                             </div>
+
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Department</label>
-                                    <select class="select">
+                                    <label>Blood</label>
+                                    <select class="select" name="bloodGroup">
                                         <option>Select</option>
-                                        <option>Dentists</option>
-                                        <option>Neurology</option>
-                                        <option>Opthalmology</option>
-                                        <option>Orthopedics</option>
-                                        <option>Cancer Department</option>
-                                        <option>ENT Department</option>
+
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Doctor</label>
-                                    <select class="select">
-                                        <option>Select</option>
-                                        <option>Cristina Groves</option>
-                                        <option>Marie Wells</option>
-                                        <option>Henry Daniels</option>
+                                    <select class="select" name="doctor_id">
+                                        <option value="1">Select</option>
+
                                     </select>
                                 </div>
                             </div>
@@ -61,15 +55,7 @@
                                 <div class="form-group">
                                     <label>Date</label>
                                     <div class="cal-icon">
-                                        <input type="text" class="form-control datetimepicker">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Time</label>
-                                    <div class="time-icon">
-                                        <input type="text" class="form-control" id="datetimepicker3">
+                                        <input type="text" class="form-control datetimepicker" name="date">
                                     </div>
                                 </div>
                             </div>
@@ -78,34 +64,19 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Patient Email</label>
-                                    <input class="form-control" type="email">
+                                    <input class="form-control" type="email" name="email">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Patient Phone Number</label>
-                                    <input class="form-control" type="text">
+                                    <input class="form-control" type="text" name="phone">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea cols="30" rows="4" class="form-control"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label class="display-block">Appointment Status</label>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="status" id="product_active" value="option1" checked>
-                                <label class="form-check-label" for="product_active">
-                                    Active
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="status" id="product_inactive" value="option2">
-                                <label class="form-check-label" for="product_inactive">
-                                    Inactive
-                                </label>
-                            </div>
+                            <textarea cols="30" rows="4" class="form-control" name="message"></textarea>
                         </div>
                         <div class="m-t-20 text-center">
                             <button class="btn btn-primary submit-btn">Create Appointment</button>

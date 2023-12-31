@@ -37,9 +37,7 @@
                 <li>
                     <a href="{{route('doctors')}}"><i class="fa fa-user-md"></i> <span>Doctors</span></a>
                 </li>
-                <li>
-                    <a href="{{route('patients')}}"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
-                </li>
+
                 <li >
                     <a href="{{route('appointment')}}"><i class="fa fa-calendar"></i> <span>Appointments</span></a>
                 </li>
@@ -47,22 +45,7 @@
                     <a href="{{route('schedule')}}"><i class="fa-regular fa-calendar"></i><span>Doctor Schedule</span></a>
                 </li>
 
-                <li class="submenu">
-                    <a href="#"><i class="fa fa-commenting-o"></i> <span> Blog</span> <span class="menu-arrow"></span></a>
-                    <ul style="display: none;">
-                        <li><a href="{{route('blog')}}">Blog</a></li>
-                        <li><a href="{{route('blogDetails')}}">Blog View</a></li>
-                        <li><a href="{{route('addBlog')}}">Add Blog</a></li>
-                        <li><a href="{{route('editBlog')}}">Edit Blog</a></li>
-                    </ul>
-                </li>
-                <li class="submenu">
-                    <a href="#"><i class="fa fa-flag-o"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
-                    <ul style="display: none;">
-                        <li><a href="expense-reports.html"> Expense Report </a></li>
-                        <li><a href="invoice-reports.html"> Invoice Report </a></li>
-                    </ul>
-                </li>
+
 
 
 

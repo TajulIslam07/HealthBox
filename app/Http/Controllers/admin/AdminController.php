@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Appointment;
 use App\Models\Doctor;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -25,6 +28,21 @@ class AdminController extends Controller
         return view('admin.addAppointment');
 
     }
+    public function addAppointmentStore(Request $request)
+    {
+        $appoint=new Appointment();
+        $appoint->p_name=$request->p_name;
+        $appoint->email=$request->email;
+        $appoint->phone=$request->phone;
+        $appoint->doctor_id=$request->doctor_id;
+        $appoint->date=$request->date;
+        $appoint->message=$request->message;
+        $appoint->age=$request->age;
+        $appoint->bloodGroup=$request->bloodGroup;
+        $appoint->save();
+
+        return redirect()->back();
+    }
 
     public function addBlog (){
         return view('admin.addBlog');
@@ -38,6 +56,17 @@ class AdminController extends Controller
 
     public function addDoctor (){
         return view('admin.addDoctor');
+
+    }
+    public function addDoctorStore(Request $request){
+       // dd($request->all());
+        $user=User::create($request->all());
+            Doctor::create([
+            'user_id'=>$user->id,
+        ]);
+
+        return redirect()->back();
+
 
     }
 
