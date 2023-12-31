@@ -13,15 +13,15 @@ return new class extends Migration
     {
         Schema::create('appointments', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->string('p_name');
-            $table->string('email');
-            $table->integer('phone');
+            $table->string('p_name')->nullable();
+            $table->string('email')->nullable();
+            $table->integer('phone')->nullable();
             //$table->string('speciality');
-            $table->integer('doctor_id');
+            $table->integer('doctor_id')->nullable();
             //$table->string('doctor_name')->nullable();
-            $table->date('date');
+            $table->date('date')->nullable();
             $table->string('message')->nullable();
            // $table->integer('serial')->nullable();
             //$table->integer('room')->nullable();

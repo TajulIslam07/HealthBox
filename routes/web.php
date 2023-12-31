@@ -60,10 +60,12 @@ Route::group(['middleware'=>['auth','adminPage']],function (){
 });
 Route::get('/admin-dashboard', [AdminController::class,'adminDashboard'])->name('adminDashboard');
 Route::get('/add-appointment' , [AdminController::class,'addAppointment'])->name('addAppointment');
+Route::post('/add-appointmentStore' , [AdminController::class,'addAppointmentStore'])->name('addAppointmentStore');
 
 Route::get('/add-blog' , [AdminController::class,'addBlog'])->name('addBlog');
 Route::get('/add-department' , [AdminController::class,'addDepartment'])->name('addDepartment');
 Route::get('/add-doctor' , [AdminController::class,'addDoctor'])->name('addDoctor');
+Route::post('/add-doctorStore' , [AdminController::class,'addDoctorStore'])->name('addDoctorStore');
 Route::get('/add-patient' , [AdminController::class,'addPatient'])->name('addPatient');
 Route::get('/add-schedule/{id}' , [AdminController::class,'addSchedule'])->name('addSchedule');
 Route::post('/add-schedule/{id}' , [AdminController::class,'addScheduleUpload'])->name('addScheduleUpload');
