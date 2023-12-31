@@ -6,9 +6,9 @@
             <div class="col-lg-6 col-md-5 col-12">
                 <!-- Contact -->
                 <ul class="top-link">
-                    <li><a href="#">About</a></li>
+                    <li><a href="{{route('portfolio')}}">About</a></li>
                     <li><a href="{{route('all-doctor')}}">Doctors</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="{{route('contact')}}">Contact</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
                 <!-- End Contact -->
@@ -66,14 +66,14 @@
 
                                 <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
                                     <ul class="dropdown">
-                                        <li><a href="blog-single.html">Blog Details</a></li>
+                                        <li><a href="{{route('userblog')}}">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="{{route('contact')}}">Contact Us</a></li>
                                 @if(Auth::id())
                                 <li><a href="#">Profile <i class="icofont-rounded-down"></i></a>
                                     <ul class="dropdown">
-                                        <li><a href="404.html">Edit Profile</a></li>
+
                                         <li>
                                             <div class="get-quote">
                                                 <a class="btn" href="{{ route('logout') }}"
