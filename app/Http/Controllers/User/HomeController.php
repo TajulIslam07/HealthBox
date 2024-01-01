@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Models\Doctor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Contracts\Session;
 
@@ -57,6 +58,15 @@ class HomeController extends Controller
 
         return redirect()->back()->with(array('bmi'=>$bmi,'output'=>$output));
 
+    }
+    public function report(){
+     $report=DB::table('appointments')
+         ->where('appointments.user_id',Auth::id())
+         ->join('serials','serials.appointment_id','=','appointments.id')
+         ->join('doctors','doctors.id','=','serials.doctor_id')
+         ->get();
+     //dd($report);
+     return view('user.report',compact('report'));
     }
 
 }

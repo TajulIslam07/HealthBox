@@ -35,7 +35,7 @@
                 <div class="col-lg-3 col-md-3 col-12">
                     <!-- Start Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo1.png" alt="#"></a>
+                        <a href="#"><img src="assets/img/logo1.png" alt="#"></a>
                     </div>
                     <!-- End Logo -->
                     <!-- Mobile Nav -->
@@ -58,7 +58,11 @@
                                     @if(Auth::id())
                                     <ul class="dropdown">
                                         <li><a href="{{route('myappointmemnt')}}">My Appointment</a></li>
-                                        <li><a href="#">Report</a></li>
+                                        <li><a href="{{route('report')}}">Reports & Prescription</a></li>
+                                        <li><a href="{{route('bmi')}}">BMI Calculator</a></li>
+                                        <li><a href="{{url('/blood_bank')}}">Blood Bank</a></li>
+                                        <li><a href="{{url('/chatify')}}">Chat</a></li>
+
 
                                     </ul>
                                     @endif

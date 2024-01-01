@@ -30,7 +30,9 @@
                     </form>
 
                 </li>
-
+                <li>
+                    <a href="{{url('/chatify')}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+                </li>
                 <li>
                     <a href="{{route('adminDashboard')}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
                 </li>

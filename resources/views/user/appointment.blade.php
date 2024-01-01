@@ -65,8 +65,8 @@
                             <div class="form-group">
                                 <div tabindex="0">
                                     <select class="list nice-select form-control wide text-primary" name="doctor">
-                                        @foreach($dctr as $data)
                                             <option selected disabled>Select Doctor</option>
+                                        @foreach($dctr as $data)
                                         <option value="{{$data->id}}">{{$data->d_name}}---{{$data->speciality}}</option>
 
                                     @endforeach

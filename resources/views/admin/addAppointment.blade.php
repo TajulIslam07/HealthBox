@@ -36,6 +36,15 @@
                                     <label>Blood</label>
                                     <select class="select" name="bloodGroup">
                                         <option>Select</option>
+                                        <option selected disabled>Select Blood</option>
+                                        <option>A+</option>
+                                        <option>A-</option>
+                                        <option>B+</option>
+                                        <option>B-</option>
+                                        <option>AB+</option>
+                                        <option>AB-</option>
+                                        <option>O+</option>
+                                        <option>O-</option>
 
                                     </select>
                                 </div>
